@@ -1,0 +1,137 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../src/background-hero.png");
+  padding-bottom: 120px;
+}
+
+.logo {
+  width: 300px;
+}
+
+h3,
+a {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#8B0401;
+  transition: 0.15s;
+}
+
+h4 {
+  font-size: 1rem;
+  color: #8B0401;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#info-whatsapp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#info-instagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 35px 120px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0px;
+}
+
+.split-nav {
+  display: flex;
+  gap: 64px;
+}
+
+.split-nav a {
+  list-style-type: none;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.split-nav a:hover {
+  color: #8B0401;
+  transition: 0.3s;
+}
+
+.tattoo-artist {
+  font-size: 36px;
+  font-weight: 300;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  gap: 64px;
+  padding: 64px 0px;
+}
+
+.tattoo-artist h2 {
+  font-size: 48px;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 1.5rem;
+}
+
+.buttons-light{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 16px;
+}
+
+.light-button {
+  color: #ffffff;
+  background-color: #ffffff00;
+  border: 1px solid #ffffff;
+  width: 320px;
+  padding: 16px 0px;
+}
+
+.light-button:hover {
+  background-color: #8B0401;
+  border: none;
+  transition: 0.15s;
+}
+
+.red-outline-button {
+  color: #8B0401;
+  background-color: #ffffff00;
+  border: 1px solid #8B0401;
+  width: 320px;
+  padding: 16px 0px;
+}
+
+.red-outline-button:hover {
+  background-color: #8B0401;
+  color: #ffffff;
+  border: none;
+  border: 1px solid #8B0401;
+  transition: 0.3s;
+}
