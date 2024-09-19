@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  width: 100vw;
-  height: auto;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../src/background-hero.png");
@@ -12,7 +12,7 @@
 }
 
 .logo {
-  width: 300px;
+  width: 18rem;
 }
 
 h3,
@@ -34,6 +34,7 @@ h4 {
 
 .info {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
 }
@@ -57,15 +58,50 @@ header {
   padding: 35px 120px;
 }
 
+.info {
+
+}
+
+.header-info {
+  flex: 1;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 24px 0px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.Logo-Nav {
+  display: none;
+  height: 80px;
+}
+
+nav.fixed .Logo-Nav {
+  display: block;
+}
+
+nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #050505bb; /* Cor de fundo alterada */
+  transition: 0.6s ease;
+  padding: 8px 120px;
+}
+
+.Logo-Nav.fixed {
+  display: block;
+  height: 80px;
 }
 
 .split-nav {
   display: flex;
   gap: 64px;
+
 }
 
 .split-nav a {
@@ -79,16 +115,52 @@ nav {
   transition: 0.3s;
 }
 
+.content-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .tattoo-artist {
   font-size: 36px;
   font-weight: 300;
   color: #ffffff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: auto;
-  gap: 64px;
-  padding: 64px 0px;
+  gap: 4rem;
+  padding: 4rem 0rem;
+}
+
+.tattoo-artist > h2 {
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .info {
+    display: none;
+  }
+
+  #navMenu {
+    display: none;
+  }
+}
+
+@media (max-width: 920px) {
+
+  .tattoo-artist {
+    font-size: 1.5rem;
+    flex-direction: column;
+    width: auto;
+    gap: 1rem;
+    padding: 4rem 0rem;
+  }
+
+  .logo {
+    width: 16rem;
+  }
 }
 
 .tattoo-artist h2 {
@@ -96,6 +168,11 @@ nav {
   font-weight: 300;
   color: #ffffff;
   letter-spacing: 1.5rem;
+}
+
+.buttons-hero {
+  display:flex;
+  flex-direction: column;
 }
 
 .buttons-light{
@@ -107,31 +184,71 @@ nav {
 }
 
 .light-button {
+  display: inline-block;
   color: #ffffff;
+  text-align: center;
   background-color: #ffffff00;
-  border: 1px solid #ffffff;
-  width: 320px;
-  padding: 16px 0px;
+  border: 0.1em solid #ffffff;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'inria sans';
+  width: 13rem;
+  padding: 0.8em 1.2em;
 }
 
 .light-button:hover {
   background-color: #8B0401;
-  border: none;
+  border: 0.1em solid #8B0401;
   transition: 0.15s;
 }
 
+@media (max-width: 522px) {
+  .buttons-light {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+  }
+
+  .buttons-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .light-button {
+    justify-content: center;
+    align-content: center;
+    width: 80% !important;
+  }
+
+  .red-outline-button {
+    width: 80% !important;
+  }
+
+  .logo {
+    width: 14rem;
+  }
+}
+
 .red-outline-button {
+  display: inline-block;
+  text-align: center;
   color: #8B0401;
   background-color: #ffffff00;
-  border: 1px solid #8B0401;
-  width: 320px;
-  padding: 16px 0px;
+  border: 0.1em solid #8B0401;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'inria sans';
+  width: 28rem;
+  padding: 0.8em 1.2em;
 }
 
 .red-outline-button:hover {
   background-color: #8B0401;
   color: #ffffff;
   border: none;
-  border: 1px solid #8B0401;
+  border: 0.1em solid #8B0401;
   transition: 0.3s;
 }

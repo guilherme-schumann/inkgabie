@@ -3,36 +3,36 @@
   background-repeat: no-repeat;
   object-fit: cover;
   background-position: top right;
-  width: 100vw;
-  padding: 120px 120px 64px 120px;
+  width: 100%;
+  padding: 7.5rem 7.5rem 4rem 7.5rem;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .servicos h2 {
   color: #ffffff;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: bold;
-  padding-top: 120px;
+  padding-top: 7.5rem;
 }
 
 .servicos p {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .text-servico {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .cards-servicos {
   display: flex;
   flex-direction: row;
-  gap: 12px;
-  height: 400px;
+  gap: 0.75rem;
+  height: 25rem;
 }
 
 .card-servico {
@@ -48,11 +48,39 @@
   max-height: 100%;
   object-fit: contain;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .button-ver-portifolio {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 1060px) {
+  .servicos {
+    background-size: cover;
+    object-fit: contain;
+    background-position: center right;
+    padding: 4rem;
+    gap: 4rem;
+  }
+
+  .servicos h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 2rem;
+  }
+
+  .cards-servicos {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    height: 25rem;
+  }
+  
+  .card-servico {
+    font-size: 1.5rem;
+  }
+
 }
 

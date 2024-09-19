@@ -3,6 +3,12 @@
   line-height: calc(1em + 0.5rem);
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }

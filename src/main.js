@@ -4,3 +4,6 @@ import '../styles/hero.css';
 import '../styles/processo.css';
 import '../styles/servicos.css';
 import '../styles/footer.css';
+import '../src/stickNavMenu.js';
+import '../styles/hamburguer-menu.css';
+import '../styles/portifolio.css';

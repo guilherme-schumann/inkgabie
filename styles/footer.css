@@ -1,6 +1,6 @@
 footer {
-  background-color: #101010;
-  padding: 64px;
+  background-color: #050505;
+  padding: 120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,6 +45,34 @@ footer a {
   align-items: flex-end;
 }
 
-.social-media {
+@media (max-width: 1206px) {
+  footer {
+    background-color: #050505;
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .content-footer-menu {
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .footer-social {
+    align-items: center;
+  }
+
+  .link-contact {
+    align-items: center;
+  }
+
+  .footer-address {
+    text-align: center;
+  }
 
 }

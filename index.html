@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <title>InkGabie</title>
     <link rel="icon" type="image/x-icon" href="/public/favicon.png">
   </head>
@@ -29,28 +29,36 @@
             <a href="https://wa.me/5535997033179">+55 (35) 99703-3179</a>
           </div>
         </div>
-        <nav>
+        <nav id="navMenu">
+            <!-- <label class="hamburguer-menu">
+              <input type="checkbox">
+            </label> -->
             <div class="split-nav">
               <a href="#home">HOME</a>
               <a href="#processo">PROCESSO</a>
               <a href="#servicos">SERVIÇO</a>
             </div>
+            <img class="Logo-Nav" src="/src/Logo-Branca.png" alt="Logo">
             <div class="split-nav">
               <a href="#portifolio">PORTIFÓLIO</a>
               <a href="#feedback">FEEDBACK</a>
-              <a href="#contato">CONTATO</a> 
+              <a href="#footer">CONTATO</a> 
             </div>
         </nav>
       </header>
-      <img class="logo" src="./src/Logo-hero.png" alt="Logo">
-      <div class="tattoo-artist">
-        <h2>TATTOO</h2><img src="./src/X.svg" alt="x"><h2>ARTIST</h2>
+      <div class="content-hero">
+        <img class="logo" src="./src/Logo-hero.png" alt="Logo">
+        <div class="tattoo-artist">
+          <h2>TATTOO</h2><img src="./src/X.svg" alt="x"><h2>ARTIST</h2>
+        </div>
+        <div class="buttons-hero">
+          <div class="buttons-light">
+            <button class="light-button">PORTIFÓLIO</button>
+            <button class="light-button">ENTRE EM CONTATO</button>
+          </div>
+        </div>
+        <button class="red-outline-button">FAÇA SEU ORÇAMENTO</button>
       </div>
-      <div class="buttons-light">
-        <button class="light-button">PORTIFÓLIO</button>
-        <button class="light-button">ENTRE EM CONTATO</button>
-      </div>
-      <button class="red-outline-button">FAÇA SEU ORÇAMENTO</button>
     </div>
     <div class="processo" id="processo">
       <div class="processo-img">
@@ -62,9 +70,9 @@
         <button class="red-button">GALERIA</button>
       </div>
     </div>
-    <div class="servicos" id="servicos">
+    <div class="servicos">
       <div class="text-servico">
-        <h2>NOSSO <span style="color:#8B0401">SERVIÇO</span></h2>
+        <h2 id="servicos">NOSSO <span style="color:#8B0401">SERVIÇO</span></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <div class="cards-servicos">
@@ -78,7 +86,15 @@
         <button class="red-button">VER PORTIFÓLIO</button>
       </div>
     </div>
-    <footer>
+    <div class="portifolio">
+      <div class="header-portifolio">
+        <img src="./src/Logo-Branca.png" alt="Logo" class="logo-portifolio">
+        <h2>PORTIFÓLIO<br><span>*****</span></h2>
+        <h2></h2>
+      </div>
+
+    </div>
+    <footer id="footer">
       <img src="./src/Logo-Branca.png" alt="Logo" class="logo-footer">
       <div class="footer-menu">
         <div class="header-footer-menu">
